@@ -394,7 +394,10 @@ Another option would be to run your app stand-alone as described above, but then
 use a proxy or load balancer to accept incoming requests (on the standard port
 80, say) and feed them to your Dancer app.
 
-This could be achieved using various software; examples would include:
+If you want to run your application behind a proxy that does ssl termination you
+will need to set the behind_proxy option in your config. See L<Config> for more information.
+
+Some example configurations:
 
 =head3 Using Apache's mod_proxy
 
